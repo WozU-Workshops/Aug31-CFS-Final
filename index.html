@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<!-- head element where we find metadata, links to stylesheets, and titles -->
+<head>
+
+    <meta charset="utf-8">
+
+    <title>Aug 31 Workshop - CFS Final</title>
+
+    <!-- imported google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Oswald|Pacifico" rel="stylesheet">
+
+    <!-- link css stylesheet -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+<!-- body element where we spend the majority of our time, anything written within the body will be visible on the browser -->
+<body>
+
+    <h1 id="title" class="center">Let's Create an Employee ID</h1>
+
+    <div class="center">
+
+        <!-- User Form -->
+        <form class="center">
+            <label>First Name:</label><input id="firstName" type="text"><br>
+            <label>Last Name:</label><input id="lastName" type="text"><br>
+            <label>Employee Id Number (1-99):</label><input id="idNumber" type="text"><br>
+            <label>Phone Number:</label><input id="phoneNumber" type="text"><br>
+            <label>Email Address:</label><input id="email" type="email"><br>
+        </form>
+
+        <!-- button used to trigger javascript function -->
+        <button onclick="">CREATE ID</button>
+
+    </div>
+
+    <!-- ID Card display -->
+    <!-- parent div needed in order to use flexbox (this is a bonus, you will learn this next course ;))-->
+    <div class="flex">
+        <!-- child div -->
+        <div id="idCard">
+
+            <img src="http://www.iconninja.com/files/373/611/612/person-user-profile-male-man-avatar-account-icon.svg">
+
+            <p id="postFullName"></p>
+
+            <p id="postIdNumber"></p>
+
+            <p id="postPhoneNumber"></p>
+
+            <p id="postEmail"></p>
+
+        </div>
+    </div>
+
+    <!-- link javascript to html -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
